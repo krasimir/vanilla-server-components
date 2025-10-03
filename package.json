@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf ./dist/*",
-    "dev": "npm run clean && node ./scripts/dev.js"
+    "dev": "node ./scripts/dev.js"
   },
   "dependencies": {
     "@types/node": "^24.0.3",

@@ -5,14 +5,12 @@ export default function App() {
     <html>
       <head>
         <title>Server Components</title>
+        <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <div id="root">
-          <header>
-            <h1>Hello world</h1>
-          </header>          
-          <footer>I'm a footer</footer>
-        </div>
+        <main>
+          <h1>Hello world</h1>
+        </main>
       </body>
     </html>
   );
