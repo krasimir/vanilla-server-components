@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/client.tsx"],
+  "sourcesContent": ["import React from \"react\";\nconsole.log('client');\n// import { hydrateRoot } from \"react-dom/client\";\n\n// import App from \"./components/App\";\n\n// hydrateRoot(document, <App />);\n"],
+  "mappings": ";;AACA,UAAQ,IAAI,QAAQ;",
+  "names": []
+}
