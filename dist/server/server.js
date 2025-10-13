@@ -96,7 +96,7 @@ app.get("/react-pipeable-stream", async (req, res) => {
     }
   });
 });
-app.get("/react-pipeable-stream", async (req, res) => {
+app.get("/react-suspense", async (req, res) => {
   const stream = renderToPipeableStream(/* @__PURE__ */ React.createElement(AppSuspense, null), {
     bootstrapScripts: ["/bundle.js"],
     onShellReady() {
