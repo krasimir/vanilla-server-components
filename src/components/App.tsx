@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 
-export default function App() {
+export default function App({ children }: { children: any }) {
   return (
     <html>
       <head>
@@ -10,6 +10,7 @@ export default function App() {
       <body>
         <main>
           <h1>Hello world</h1>
+          {children}
         </main>
       </body>
     </html>
