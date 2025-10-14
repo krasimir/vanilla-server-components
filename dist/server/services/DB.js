@@ -15,6 +15,11 @@ async function getComments(delay) {
     { id: 3, postId: 2, content: "Thanks for sharing." }
   ];
 }
+async function getCommentsByPostId(postId, delay) {
+  await new Promise((resolve) => setTimeout(resolve, (delay || DEFAULT_DELAY) * 1e3));
+  const allComments = await getComments(0);
+  return allComments.filter((comment) => comment.postId === postId);
+}
 function getContent(posts, comments) {
   return posts.map((post) => {
     const postComments = comments.filter((comment) => comment.postId === post.id);
@@ -30,6 +35,7 @@ function getContent(posts, comments) {
 }
 export {
   getComments,
+  getCommentsByPostId,
   getContent,
   getPosts
 };

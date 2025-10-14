@@ -17,6 +17,11 @@ export async function getComments(delay) {
     { id: 3, postId: 2, content: "Thanks for sharing." }
   ];
 }
+export async function getCommentsByPostId(postId, delay) {
+  await new Promise((resolve) => setTimeout(resolve, (delay || DEFAULT_DELAY) * 1000));
+  const allComments = await getComments(0); // No delay for internal call
+  return allComments.filter((comment) => comment.postId === postId);
+}
 
 export function getContent(posts, comments) {
   return posts
