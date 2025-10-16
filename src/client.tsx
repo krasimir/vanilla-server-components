@@ -1,11 +1,4 @@
 import React from "react";
-console.log('client');
-// import { hydrateRoot } from "react-dom/client";
-
-// import App from "./components/App";
-
-// hydrateRoot(document, <App />);
-
 
 window.renderPosts = function (posts) {
   const container = document.getElementById("posts");
@@ -23,6 +16,7 @@ window.renderPosts = function (posts) {
     }, 0);
   });
 };
+
 window.renderComments = function (comments) {
   comments.forEach((comment) => {
     const commentsContainer = document.getElementById(`comments-${comment.postId}`);

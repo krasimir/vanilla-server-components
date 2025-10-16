@@ -1,4 +1,3 @@
-console.log("client");
 window.renderPosts = function(posts) {
   const container = document.getElementById("posts");
   posts.forEach((post) => {

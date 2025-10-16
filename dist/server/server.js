@@ -6,11 +6,12 @@ import express from "express";
 import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+import { getComments, getPosts, getContent } from "./services/DB.js";
 import App from "./components/App.js";
 import AppAsync from "./components/AppAsync.js";
 import AppPipeable from "./components/AppPipeable.js";
-import { getComments, getPosts, getContent } from "./services/DB.js";
 import AppSuspense from "./components/AppSuspense.js";
+import AppWithClient from "./components/AppWithClient.js";
 const port = 8087;
 const app = express();
 const server = http.createServer(app);
@@ -98,6 +99,19 @@ app.get("/react-pipeable-stream", async (req, res) => {
 });
 app.get("/react-suspense", async (req, res) => {
   const stream = renderToPipeableStream(/* @__PURE__ */ React.createElement(AppSuspense, null), {
+    bootstrapScripts: ["/bundle.js"],
+    onShellReady() {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "text/html");
+      stream.pipe(res);
+    },
+    onError(err) {
+      console.error(err);
+    }
+  });
+});
+app.get("/react-suspense-with-client", async (req, res) => {
+  const stream = renderToPipeableStream(/* @__PURE__ */ React.createElement(AppWithClient, null), {
     bootstrapScripts: ["/bundle.js"],
     onShellReady() {
       res.statusCode = 200;

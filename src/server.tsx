@@ -7,18 +7,18 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+import { getComments, getPosts, getContent } from "./services/DB.js";
 import App from "./components/App.js";
 import AppAsync from "./components/AppAsync.js";
 import AppPipeable from "./components/AppPipeable.js";
-import { getComments, getPosts, getContent } from "./services/DB.js";
 import AppSuspense from "./components/AppSuspense.js";
+import AppWithClient from "./components/AppWithClient.js";
 
 const port = 8087;
 const app = express();
 const server = http.createServer(app);
 
 app.use(express.static(path.join(__dirname, "..", "public")));
-
 
 // ------------------------------------------------------ HTTP streaming
 app.get("/http-streaming", async (req, res) => {
@@ -123,6 +123,22 @@ app.get("/react-pipeable-stream", async (req, res) => {
 
 app.get("/react-suspense", async (req, res) => {
   const stream = renderToPipeableStream(<AppSuspense />, {
+    bootstrapScripts: ["/bundle.js"],
+    onShellReady() {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "text/html");
+      stream.pipe(res);
+    },
+    onError(err) {
+      console.error(err);
+    }
+  });
+});
+
+// ------------------------------------------------------ React Suspense with client component
+
+app.get("/react-suspense-with-client", async (req, res) => {
+  const stream = renderToPipeableStream(<AppWithClient />, {
     bootstrapScripts: ["/bundle.js"],
     onShellReady() {
       res.statusCode = 200;
