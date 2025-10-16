@@ -1,14 +1,19 @@
 "use client";
-import React, { use, useState } from "react";
-import { getCommentsByPostId } from "../../services/DB.js";
 
-export default function Comments({ postId }: { postId: number }) {
-  const comments = use(getCommentsByPostId(postId, 0.2));
+import React, { use, useState } from "react";
+
+type CommentsProps = {
+  commentsPromise: Promise<Array<{ id: number; content: string }>>;
+}
+
+export default function Comments({ commentsPromise }: CommentsProps) {
+  const comments = use(commentsPromise);
   const [visible, setVisible] = useState(false);
 
   if (!visible) {
     return <button onClick={() => setVisible(true)}>Show Comments</button>;
   }
+
   return (
     <ul>
       {comments.map((comment) => (

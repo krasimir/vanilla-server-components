@@ -4,17 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node ./scripts/dev.js"
+    "dev": "node ./scripts/dev.js",
+    "magic": "node ./scripts/magic.js"
   },
   "dependencies": {
     "@types/node": "^24.0.3",
     "@types/react": "^19.1.8",
     "chalk": "4.1.2",
-    "chokidar": "3.5.2",
+    "chokidar": "^4.0.3",
     "esbuild": "0.25.0",
     "express": "4.21.2",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "@swc/cli": "^0.7.7",
+    "@swc/core": "1.12.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",

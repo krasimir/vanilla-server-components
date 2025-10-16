@@ -1,0 +1,1922 @@
+var type = "Module";
+var span = {
+  start: 1,
+  end: 1115
+};
+var body = [
+  {
+    type: "ImportDeclaration",
+    span: {
+      start: 1,
+      end: 58
+    },
+    specifiers: [
+      {
+        type: "ImportDefaultSpecifier",
+        span: {
+          start: 8,
+          end: 13
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 8,
+            end: 13
+          },
+          ctxt: 2,
+          value: "React",
+          optional: false
+        }
+      },
+      {
+        type: "ImportSpecifier",
+        span: {
+          start: 17,
+          end: 20
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 17,
+            end: 20
+          },
+          ctxt: 2,
+          value: "use",
+          optional: false
+        },
+        imported: null,
+        isTypeOnly: false
+      },
+      {
+        type: "ImportSpecifier",
+        span: {
+          start: 22,
+          end: 30
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 22,
+            end: 30
+          },
+          ctxt: 2,
+          value: "Suspense",
+          optional: false
+        },
+        imported: null,
+        isTypeOnly: false
+      },
+      {
+        type: "ImportSpecifier",
+        span: {
+          start: 32,
+          end: 42
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 32,
+            end: 42
+          },
+          ctxt: 2,
+          value: "useContext",
+          optional: false
+        },
+        imported: null,
+        isTypeOnly: false
+      }
+    ],
+    source: {
+      type: "StringLiteral",
+      span: {
+        start: 50,
+        end: 57
+      },
+      value: "react",
+      raw: '"react"'
+    },
+    typeOnly: false,
+    with: null,
+    phase: "evaluation"
+  },
+  {
+    type: "ImportDeclaration",
+    span: {
+      start: 59,
+      end: 125
+    },
+    specifiers: [
+      {
+        type: "ImportSpecifier",
+        span: {
+          start: 68,
+          end: 87
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 68,
+            end: 87
+          },
+          ctxt: 2,
+          value: "getCommentsByPostId",
+          optional: false
+        },
+        imported: null,
+        isTypeOnly: false
+      },
+      {
+        type: "ImportSpecifier",
+        span: {
+          start: 89,
+          end: 97
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 89,
+            end: 97
+          },
+          ctxt: 2,
+          value: "getPosts",
+          optional: false
+        },
+        imported: null,
+        isTypeOnly: false
+      }
+    ],
+    source: {
+      type: "StringLiteral",
+      span: {
+        start: 105,
+        end: 124
+      },
+      value: "../services/DB.js",
+      raw: '"../services/DB.js"'
+    },
+    typeOnly: false,
+    with: null,
+    phase: "evaluation"
+  },
+  {
+    type: "ImportDeclaration",
+    span: {
+      start: 127,
+      end: 169
+    },
+    specifiers: [
+      {
+        type: "ImportDefaultSpecifier",
+        span: {
+          start: 134,
+          end: 142
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 134,
+            end: 142
+          },
+          ctxt: 2,
+          value: "Comments",
+          optional: false
+        }
+      }
+    ],
+    source: {
+      type: "StringLiteral",
+      span: {
+        start: 148,
+        end: 168
+      },
+      value: "./blog/Comments.js",
+      raw: "'./blog/Comments.js'"
+    },
+    typeOnly: false,
+    with: null,
+    phase: "evaluation"
+  },
+  {
+    type: "ImportDeclaration",
+    span: {
+      start: 170,
+      end: 227
+    },
+    specifiers: [
+      {
+        type: "ImportSpecifier",
+        span: {
+          start: 179,
+          end: 194
+        },
+        local: {
+          type: "Identifier",
+          span: {
+            start: 179,
+            end: 194
+          },
+          ctxt: 2,
+          value: "PromisesContext",
+          optional: false
+        },
+        imported: null,
+        isTypeOnly: false
+      }
+    ],
+    source: {
+      type: "StringLiteral",
+      span: {
+        start: 202,
+        end: 226
+      },
+      value: "./contexts/Promises.js",
+      raw: '"./contexts/Promises.js"'
+    },
+    typeOnly: false,
+    with: null,
+    phase: "evaluation"
+  },
+  {
+    type: "ExportDefaultDeclaration",
+    span: {
+      start: 229,
+      end: 744
+    },
+    decl: {
+      type: "FunctionExpression",
+      identifier: {
+        type: "Identifier",
+        span: {
+          start: 259,
+          end: 272
+        },
+        ctxt: 2,
+        value: "AppWithClient",
+        optional: false
+      },
+      params: [
+        {
+          type: "Parameter",
+          span: {
+            start: 273,
+            end: 285
+          },
+          decorators: [],
+          pat: {
+            type: "ObjectPattern",
+            span: {
+              start: 273,
+              end: 285
+            },
+            properties: [
+              {
+                type: "AssignmentPatternProperty",
+                span: {
+                  start: 275,
+                  end: 283
+                },
+                key: {
+                  type: "Identifier",
+                  span: {
+                    start: 275,
+                    end: 283
+                  },
+                  ctxt: 3,
+                  value: "Promises",
+                  optional: false,
+                  typeAnnotation: null
+                },
+                value: null
+              }
+            ],
+            optional: false,
+            typeAnnotation: null
+          }
+        }
+      ],
+      decorators: [],
+      span: {
+        start: 244,
+        end: 744
+      },
+      ctxt: 3,
+      body: {
+        type: "BlockStatement",
+        span: {
+          start: 287,
+          end: 744
+        },
+        ctxt: 3,
+        stmts: [
+          {
+            type: "ReturnStatement",
+            span: {
+              start: 291,
+              end: 742
+            },
+            argument: {
+              type: "ParenthesisExpression",
+              span: {
+                start: 298,
+                end: 741
+              },
+              expression: {
+                type: "JSXElement",
+                span: {
+                  start: 304,
+                  end: 737
+                },
+                opening: {
+                  type: "JSXOpeningElement",
+                  name: {
+                    type: "Identifier",
+                    span: {
+                      start: 305,
+                      end: 309
+                    },
+                    ctxt: 1,
+                    value: "html",
+                    optional: false
+                  },
+                  span: {
+                    start: 304,
+                    end: 310
+                  },
+                  attributes: [],
+                  selfClosing: false,
+                  typeArguments: null
+                },
+                children: [
+                  {
+                    type: "JSXText",
+                    span: {
+                      start: 310,
+                      end: 317
+                    },
+                    value: "\n      ",
+                    raw: "\n      "
+                  },
+                  {
+                    type: "JSXElement",
+                    span: {
+                      start: 317,
+                      end: 434
+                    },
+                    opening: {
+                      type: "JSXOpeningElement",
+                      name: {
+                        type: "Identifier",
+                        span: {
+                          start: 318,
+                          end: 322
+                        },
+                        ctxt: 1,
+                        value: "head",
+                        optional: false
+                      },
+                      span: {
+                        start: 317,
+                        end: 323
+                      },
+                      attributes: [],
+                      selfClosing: false,
+                      typeArguments: null
+                    },
+                    children: [
+                      {
+                        type: "JSXText",
+                        span: {
+                          start: 323,
+                          end: 332
+                        },
+                        value: "\n        ",
+                        raw: "\n        "
+                      },
+                      {
+                        type: "JSXElement",
+                        span: {
+                          start: 332,
+                          end: 367
+                        },
+                        opening: {
+                          type: "JSXOpeningElement",
+                          name: {
+                            type: "Identifier",
+                            span: {
+                              start: 333,
+                              end: 338
+                            },
+                            ctxt: 1,
+                            value: "title",
+                            optional: false
+                          },
+                          span: {
+                            start: 332,
+                            end: 339
+                          },
+                          attributes: [],
+                          selfClosing: false,
+                          typeArguments: null
+                        },
+                        children: [
+                          {
+                            type: "JSXText",
+                            span: {
+                              start: 339,
+                              end: 359
+                            },
+                            value: "Suspense with client",
+                            raw: "Suspense with client"
+                          }
+                        ],
+                        closing: {
+                          type: "JSXClosingElement",
+                          span: {
+                            start: 359,
+                            end: 367
+                          },
+                          name: {
+                            type: "Identifier",
+                            span: {
+                              start: 361,
+                              end: 366
+                            },
+                            ctxt: 1,
+                            value: "title",
+                            optional: false
+                          }
+                        }
+                      },
+                      {
+                        type: "JSXText",
+                        span: {
+                          start: 367,
+                          end: 376
+                        },
+                        value: "\n        ",
+                        raw: "\n        "
+                      },
+                      {
+                        type: "JSXElement",
+                        span: {
+                          start: 376,
+                          end: 420
+                        },
+                        opening: {
+                          type: "JSXOpeningElement",
+                          name: {
+                            type: "Identifier",
+                            span: {
+                              start: 377,
+                              end: 381
+                            },
+                            ctxt: 1,
+                            value: "link",
+                            optional: false
+                          },
+                          span: {
+                            start: 376,
+                            end: 420
+                          },
+                          attributes: [
+                            {
+                              type: "JSXAttribute",
+                              span: {
+                                start: 382,
+                                end: 398
+                              },
+                              name: {
+                                type: "Identifier",
+                                span: {
+                                  start: 382,
+                                  end: 385
+                                },
+                                value: "rel"
+                              },
+                              value: {
+                                type: "StringLiteral",
+                                span: {
+                                  start: 386,
+                                  end: 398
+                                },
+                                value: "stylesheet",
+                                raw: '"stylesheet"'
+                              }
+                            },
+                            {
+                              type: "JSXAttribute",
+                              span: {
+                                start: 399,
+                                end: 417
+                              },
+                              name: {
+                                type: "Identifier",
+                                span: {
+                                  start: 399,
+                                  end: 403
+                                },
+                                value: "href"
+                              },
+                              value: {
+                                type: "StringLiteral",
+                                span: {
+                                  start: 404,
+                                  end: 417
+                                },
+                                value: "/styles.css",
+                                raw: '"/styles.css"'
+                              }
+                            }
+                          ],
+                          selfClosing: true,
+                          typeArguments: null
+                        },
+                        children: [],
+                        closing: null
+                      },
+                      {
+                        type: "JSXText",
+                        span: {
+                          start: 420,
+                          end: 427
+                        },
+                        value: "\n      ",
+                        raw: "\n      "
+                      }
+                    ],
+                    closing: {
+                      type: "JSXClosingElement",
+                      span: {
+                        start: 427,
+                        end: 434
+                      },
+                      name: {
+                        type: "Identifier",
+                        span: {
+                          start: 429,
+                          end: 433
+                        },
+                        ctxt: 1,
+                        value: "head",
+                        optional: false
+                      }
+                    }
+                  },
+                  {
+                    type: "JSXText",
+                    span: {
+                      start: 434,
+                      end: 441
+                    },
+                    value: "\n      ",
+                    raw: "\n      "
+                  },
+                  {
+                    type: "JSXElement",
+                    span: {
+                      start: 441,
+                      end: 725
+                    },
+                    opening: {
+                      type: "JSXOpeningElement",
+                      name: {
+                        type: "Identifier",
+                        span: {
+                          start: 442,
+                          end: 446
+                        },
+                        ctxt: 1,
+                        value: "body",
+                        optional: false
+                      },
+                      span: {
+                        start: 441,
+                        end: 447
+                      },
+                      attributes: [],
+                      selfClosing: false,
+                      typeArguments: null
+                    },
+                    children: [
+                      {
+                        type: "JSXText",
+                        span: {
+                          start: 447,
+                          end: 456
+                        },
+                        value: "\n        ",
+                        raw: "\n        "
+                      },
+                      {
+                        type: "JSXElement",
+                        span: {
+                          start: 456,
+                          end: 711
+                        },
+                        opening: {
+                          type: "JSXOpeningElement",
+                          name: {
+                            type: "JSXMemberExpression",
+                            span: {
+                              start: 457,
+                              end: 481
+                            },
+                            object: {
+                              type: "Identifier",
+                              span: {
+                                start: 457,
+                                end: 472
+                              },
+                              ctxt: 2,
+                              value: "PromisesContext",
+                              optional: false
+                            },
+                            property: {
+                              type: "Identifier",
+                              span: {
+                                start: 473,
+                                end: 481
+                              },
+                              value: "Provider"
+                            }
+                          },
+                          span: {
+                            start: 456,
+                            end: 499
+                          },
+                          attributes: [
+                            {
+                              type: "JSXAttribute",
+                              span: {
+                                start: 482,
+                                end: 498
+                              },
+                              name: {
+                                type: "Identifier",
+                                span: {
+                                  start: 482,
+                                  end: 487
+                                },
+                                value: "value"
+                              },
+                              value: {
+                                type: "JSXExpressionContainer",
+                                span: {
+                                  start: 488,
+                                  end: 498
+                                },
+                                expression: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 489,
+                                    end: 497
+                                  },
+                                  ctxt: 3,
+                                  value: "Promises",
+                                  optional: false
+                                }
+                              }
+                            }
+                          ],
+                          selfClosing: false,
+                          typeArguments: null
+                        },
+                        children: [
+                          {
+                            type: "JSXText",
+                            span: {
+                              start: 499,
+                              end: 510
+                            },
+                            value: "\n          ",
+                            raw: "\n          "
+                          },
+                          {
+                            type: "JSXElement",
+                            span: {
+                              start: 510,
+                              end: 675
+                            },
+                            opening: {
+                              type: "JSXOpeningElement",
+                              name: {
+                                type: "Identifier",
+                                span: {
+                                  start: 511,
+                                  end: 515
+                                },
+                                ctxt: 1,
+                                value: "main",
+                                optional: false
+                              },
+                              span: {
+                                start: 510,
+                                end: 516
+                              },
+                              attributes: [],
+                              selfClosing: false,
+                              typeArguments: null
+                            },
+                            children: [
+                              {
+                                type: "JSXText",
+                                span: {
+                                  start: 516,
+                                  end: 529
+                                },
+                                value: "\n            ",
+                                raw: "\n            "
+                              },
+                              {
+                                type: "JSXElement",
+                                span: {
+                                  start: 529,
+                                  end: 549
+                                },
+                                opening: {
+                                  type: "JSXOpeningElement",
+                                  name: {
+                                    type: "Identifier",
+                                    span: {
+                                      start: 530,
+                                      end: 532
+                                    },
+                                    ctxt: 1,
+                                    value: "h1",
+                                    optional: false
+                                  },
+                                  span: {
+                                    start: 529,
+                                    end: 533
+                                  },
+                                  attributes: [],
+                                  selfClosing: false,
+                                  typeArguments: null
+                                },
+                                children: [
+                                  {
+                                    type: "JSXText",
+                                    span: {
+                                      start: 533,
+                                      end: 544
+                                    },
+                                    value: "Hello world",
+                                    raw: "Hello world"
+                                  }
+                                ],
+                                closing: {
+                                  type: "JSXClosingElement",
+                                  span: {
+                                    start: 544,
+                                    end: 549
+                                  },
+                                  name: {
+                                    type: "Identifier",
+                                    span: {
+                                      start: 546,
+                                      end: 548
+                                    },
+                                    ctxt: 1,
+                                    value: "h1",
+                                    optional: false
+                                  }
+                                }
+                              },
+                              {
+                                type: "JSXText",
+                                span: {
+                                  start: 549,
+                                  end: 562
+                                },
+                                value: "\n            ",
+                                raw: "\n            "
+                              },
+                              {
+                                type: "JSXElement",
+                                span: {
+                                  start: 562,
+                                  end: 657
+                                },
+                                opening: {
+                                  type: "JSXOpeningElement",
+                                  name: {
+                                    type: "Identifier",
+                                    span: {
+                                      start: 563,
+                                      end: 571
+                                    },
+                                    ctxt: 2,
+                                    value: "Suspense",
+                                    optional: false
+                                  },
+                                  span: {
+                                    start: 562,
+                                    end: 609
+                                  },
+                                  attributes: [
+                                    {
+                                      type: "JSXAttribute",
+                                      span: {
+                                        start: 572,
+                                        end: 608
+                                      },
+                                      name: {
+                                        type: "Identifier",
+                                        span: {
+                                          start: 572,
+                                          end: 580
+                                        },
+                                        value: "fallback"
+                                      },
+                                      value: {
+                                        type: "JSXExpressionContainer",
+                                        span: {
+                                          start: 581,
+                                          end: 608
+                                        },
+                                        expression: {
+                                          type: "JSXElement",
+                                          span: {
+                                            start: 582,
+                                            end: 607
+                                          },
+                                          opening: {
+                                            type: "JSXOpeningElement",
+                                            name: {
+                                              type: "Identifier",
+                                              span: {
+                                                start: 583,
+                                                end: 585
+                                              },
+                                              ctxt: 1,
+                                              value: "h2",
+                                              optional: false
+                                            },
+                                            span: {
+                                              start: 582,
+                                              end: 586
+                                            },
+                                            attributes: [],
+                                            selfClosing: false,
+                                            typeArguments: null
+                                          },
+                                          children: [
+                                            {
+                                              type: "JSXText",
+                                              span: {
+                                                start: 586,
+                                                end: 602
+                                              },
+                                              value: "Loading posts...",
+                                              raw: "Loading posts..."
+                                            }
+                                          ],
+                                          closing: {
+                                            type: "JSXClosingElement",
+                                            span: {
+                                              start: 602,
+                                              end: 607
+                                            },
+                                            name: {
+                                              type: "Identifier",
+                                              span: {
+                                                start: 604,
+                                                end: 606
+                                              },
+                                              ctxt: 1,
+                                              value: "h2",
+                                              optional: false
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  selfClosing: false,
+                                  typeArguments: null
+                                },
+                                children: [
+                                  {
+                                    type: "JSXText",
+                                    span: {
+                                      start: 609,
+                                      end: 624
+                                    },
+                                    value: "\n              ",
+                                    raw: "\n              "
+                                  },
+                                  {
+                                    type: "JSXElement",
+                                    span: {
+                                      start: 624,
+                                      end: 633
+                                    },
+                                    opening: {
+                                      type: "JSXOpeningElement",
+                                      name: {
+                                        type: "Identifier",
+                                        span: {
+                                          start: 625,
+                                          end: 630
+                                        },
+                                        ctxt: 2,
+                                        value: "Posts",
+                                        optional: false
+                                      },
+                                      span: {
+                                        start: 624,
+                                        end: 633
+                                      },
+                                      attributes: [],
+                                      selfClosing: true,
+                                      typeArguments: null
+                                    },
+                                    children: [],
+                                    closing: null
+                                  },
+                                  {
+                                    type: "JSXText",
+                                    span: {
+                                      start: 633,
+                                      end: 646
+                                    },
+                                    value: "\n            ",
+                                    raw: "\n            "
+                                  }
+                                ],
+                                closing: {
+                                  type: "JSXClosingElement",
+                                  span: {
+                                    start: 646,
+                                    end: 657
+                                  },
+                                  name: {
+                                    type: "Identifier",
+                                    span: {
+                                      start: 648,
+                                      end: 656
+                                    },
+                                    ctxt: 2,
+                                    value: "Suspense",
+                                    optional: false
+                                  }
+                                }
+                              },
+                              {
+                                type: "JSXText",
+                                span: {
+                                  start: 657,
+                                  end: 668
+                                },
+                                value: "\n          ",
+                                raw: "\n          "
+                              }
+                            ],
+                            closing: {
+                              type: "JSXClosingElement",
+                              span: {
+                                start: 668,
+                                end: 675
+                              },
+                              name: {
+                                type: "Identifier",
+                                span: {
+                                  start: 670,
+                                  end: 674
+                                },
+                                ctxt: 1,
+                                value: "main",
+                                optional: false
+                              }
+                            }
+                          },
+                          {
+                            type: "JSXText",
+                            span: {
+                              start: 675,
+                              end: 684
+                            },
+                            value: "\n        ",
+                            raw: "\n        "
+                          }
+                        ],
+                        closing: {
+                          type: "JSXClosingElement",
+                          span: {
+                            start: 684,
+                            end: 711
+                          },
+                          name: {
+                            type: "JSXMemberExpression",
+                            span: {
+                              start: 686,
+                              end: 710
+                            },
+                            object: {
+                              type: "Identifier",
+                              span: {
+                                start: 686,
+                                end: 701
+                              },
+                              ctxt: 2,
+                              value: "PromisesContext",
+                              optional: false
+                            },
+                            property: {
+                              type: "Identifier",
+                              span: {
+                                start: 702,
+                                end: 710
+                              },
+                              value: "Provider"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        type: "JSXText",
+                        span: {
+                          start: 711,
+                          end: 718
+                        },
+                        value: "\n      ",
+                        raw: "\n      "
+                      }
+                    ],
+                    closing: {
+                      type: "JSXClosingElement",
+                      span: {
+                        start: 718,
+                        end: 725
+                      },
+                      name: {
+                        type: "Identifier",
+                        span: {
+                          start: 720,
+                          end: 724
+                        },
+                        ctxt: 1,
+                        value: "body",
+                        optional: false
+                      }
+                    }
+                  },
+                  {
+                    type: "JSXText",
+                    span: {
+                      start: 725,
+                      end: 730
+                    },
+                    value: "\n    ",
+                    raw: "\n    "
+                  }
+                ],
+                closing: {
+                  type: "JSXClosingElement",
+                  span: {
+                    start: 730,
+                    end: 737
+                  },
+                  name: {
+                    type: "Identifier",
+                    span: {
+                      start: 732,
+                      end: 736
+                    },
+                    ctxt: 1,
+                    value: "html",
+                    optional: false
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      generator: false,
+      async: true,
+      typeParameters: null,
+      returnType: null
+    }
+  },
+  {
+    type: "FunctionDeclaration",
+    identifier: {
+      type: "Identifier",
+      span: {
+        start: 755,
+        end: 760
+      },
+      ctxt: 2,
+      value: "Posts",
+      optional: false
+    },
+    declare: false,
+    params: [],
+    decorators: [],
+    span: {
+      start: 746,
+      end: 1115
+    },
+    ctxt: 4,
+    body: {
+      type: "BlockStatement",
+      span: {
+        start: 763,
+        end: 1115
+      },
+      ctxt: 4,
+      stmts: [
+        {
+          type: "VariableDeclaration",
+          span: {
+            start: 767,
+            end: 800
+          },
+          ctxt: 0,
+          kind: "const",
+          declare: false,
+          declarations: [
+            {
+              type: "VariableDeclarator",
+              span: {
+                start: 773,
+                end: 799
+              },
+              id: {
+                type: "Identifier",
+                span: {
+                  start: 773,
+                  end: 778
+                },
+                ctxt: 4,
+                value: "posts",
+                optional: false,
+                typeAnnotation: null
+              },
+              init: {
+                type: "CallExpression",
+                span: {
+                  start: 781,
+                  end: 799
+                },
+                ctxt: 0,
+                callee: {
+                  type: "Identifier",
+                  span: {
+                    start: 781,
+                    end: 784
+                  },
+                  ctxt: 2,
+                  value: "use",
+                  optional: false
+                },
+                arguments: [
+                  {
+                    spread: null,
+                    expression: {
+                      type: "CallExpression",
+                      span: {
+                        start: 785,
+                        end: 798
+                      },
+                      ctxt: 0,
+                      callee: {
+                        type: "Identifier",
+                        span: {
+                          start: 785,
+                          end: 793
+                        },
+                        ctxt: 2,
+                        value: "getPosts",
+                        optional: false
+                      },
+                      arguments: [
+                        {
+                          spread: null,
+                          expression: {
+                            type: "NumericLiteral",
+                            span: {
+                              start: 794,
+                              end: 797
+                            },
+                            value: 0.1,
+                            raw: "0.1"
+                          }
+                        }
+                      ],
+                      typeArguments: null
+                    }
+                  }
+                ],
+                typeArguments: null
+              },
+              definite: false
+            }
+          ]
+        },
+        {
+          type: "ReturnStatement",
+          span: {
+            start: 803,
+            end: 1113
+          },
+          argument: {
+            type: "CallExpression",
+            span: {
+              start: 810,
+              end: 1112
+            },
+            ctxt: 0,
+            callee: {
+              type: "MemberExpression",
+              span: {
+                start: 810,
+                end: 819
+              },
+              object: {
+                type: "Identifier",
+                span: {
+                  start: 810,
+                  end: 815
+                },
+                ctxt: 4,
+                value: "posts",
+                optional: false
+              },
+              property: {
+                type: "Identifier",
+                span: {
+                  start: 816,
+                  end: 819
+                },
+                value: "map"
+              }
+            },
+            arguments: [
+              {
+                spread: null,
+                expression: {
+                  type: "ArrowFunctionExpression",
+                  span: {
+                    start: 820,
+                    end: 1111
+                  },
+                  ctxt: 0,
+                  params: [
+                    {
+                      type: "Identifier",
+                      span: {
+                        start: 821,
+                        end: 825
+                      },
+                      ctxt: 5,
+                      value: "post",
+                      optional: false,
+                      typeAnnotation: null
+                    }
+                  ],
+                  body: {
+                    type: "ParenthesisExpression",
+                    span: {
+                      start: 830,
+                      end: 1111
+                    },
+                    expression: {
+                      type: "JSXElement",
+                      span: {
+                        start: 836,
+                        end: 1107
+                      },
+                      opening: {
+                        type: "JSXOpeningElement",
+                        name: {
+                          type: "Identifier",
+                          span: {
+                            start: 837,
+                            end: 844
+                          },
+                          ctxt: 1,
+                          value: "article",
+                          optional: false
+                        },
+                        span: {
+                          start: 836,
+                          end: 859
+                        },
+                        attributes: [
+                          {
+                            type: "JSXAttribute",
+                            span: {
+                              start: 845,
+                              end: 858
+                            },
+                            name: {
+                              type: "Identifier",
+                              span: {
+                                start: 845,
+                                end: 848
+                              },
+                              value: "key"
+                            },
+                            value: {
+                              type: "JSXExpressionContainer",
+                              span: {
+                                start: 849,
+                                end: 858
+                              },
+                              expression: {
+                                type: "MemberExpression",
+                                span: {
+                                  start: 850,
+                                  end: 857
+                                },
+                                object: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 850,
+                                    end: 854
+                                  },
+                                  ctxt: 5,
+                                  value: "post",
+                                  optional: false
+                                },
+                                property: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 855,
+                                    end: 857
+                                  },
+                                  value: "id"
+                                }
+                              }
+                            }
+                          }
+                        ],
+                        selfClosing: false,
+                        typeArguments: null
+                      },
+                      children: [
+                        {
+                          type: "JSXText",
+                          span: {
+                            start: 859,
+                            end: 866
+                          },
+                          value: "\n      ",
+                          raw: "\n      "
+                        },
+                        {
+                          type: "JSXElement",
+                          span: {
+                            start: 866,
+                            end: 887
+                          },
+                          opening: {
+                            type: "JSXOpeningElement",
+                            name: {
+                              type: "Identifier",
+                              span: {
+                                start: 867,
+                                end: 869
+                              },
+                              ctxt: 1,
+                              value: "h2",
+                              optional: false
+                            },
+                            span: {
+                              start: 866,
+                              end: 870
+                            },
+                            attributes: [],
+                            selfClosing: false,
+                            typeArguments: null
+                          },
+                          children: [
+                            {
+                              type: "JSXExpressionContainer",
+                              span: {
+                                start: 870,
+                                end: 882
+                              },
+                              expression: {
+                                type: "MemberExpression",
+                                span: {
+                                  start: 871,
+                                  end: 881
+                                },
+                                object: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 871,
+                                    end: 875
+                                  },
+                                  ctxt: 5,
+                                  value: "post",
+                                  optional: false
+                                },
+                                property: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 876,
+                                    end: 881
+                                  },
+                                  value: "title"
+                                }
+                              }
+                            }
+                          ],
+                          closing: {
+                            type: "JSXClosingElement",
+                            span: {
+                              start: 882,
+                              end: 887
+                            },
+                            name: {
+                              type: "Identifier",
+                              span: {
+                                start: 884,
+                                end: 886
+                              },
+                              ctxt: 1,
+                              value: "h2",
+                              optional: false
+                            }
+                          }
+                        },
+                        {
+                          type: "JSXText",
+                          span: {
+                            start: 887,
+                            end: 894
+                          },
+                          value: "\n      ",
+                          raw: "\n      "
+                        },
+                        {
+                          type: "JSXElement",
+                          span: {
+                            start: 894,
+                            end: 915
+                          },
+                          opening: {
+                            type: "JSXOpeningElement",
+                            name: {
+                              type: "Identifier",
+                              span: {
+                                start: 895,
+                                end: 896
+                              },
+                              ctxt: 1,
+                              value: "p",
+                              optional: false
+                            },
+                            span: {
+                              start: 894,
+                              end: 897
+                            },
+                            attributes: [],
+                            selfClosing: false,
+                            typeArguments: null
+                          },
+                          children: [
+                            {
+                              type: "JSXExpressionContainer",
+                              span: {
+                                start: 897,
+                                end: 911
+                              },
+                              expression: {
+                                type: "MemberExpression",
+                                span: {
+                                  start: 898,
+                                  end: 910
+                                },
+                                object: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 898,
+                                    end: 902
+                                  },
+                                  ctxt: 5,
+                                  value: "post",
+                                  optional: false
+                                },
+                                property: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 903,
+                                    end: 910
+                                  },
+                                  value: "content"
+                                }
+                              }
+                            }
+                          ],
+                          closing: {
+                            type: "JSXClosingElement",
+                            span: {
+                              start: 911,
+                              end: 915
+                            },
+                            name: {
+                              type: "Identifier",
+                              span: {
+                                start: 913,
+                                end: 914
+                              },
+                              ctxt: 1,
+                              value: "p",
+                              optional: false
+                            }
+                          }
+                        },
+                        {
+                          type: "JSXText",
+                          span: {
+                            start: 915,
+                            end: 922
+                          },
+                          value: "\n      ",
+                          raw: "\n      "
+                        },
+                        {
+                          type: "JSXElement",
+                          span: {
+                            start: 922,
+                            end: 1092
+                          },
+                          opening: {
+                            type: "JSXOpeningElement",
+                            name: {
+                              type: "Identifier",
+                              span: {
+                                start: 923,
+                                end: 926
+                              },
+                              ctxt: 1,
+                              value: "div",
+                              optional: false
+                            },
+                            span: {
+                              start: 922,
+                              end: 927
+                            },
+                            attributes: [],
+                            selfClosing: false,
+                            typeArguments: null
+                          },
+                          children: [
+                            {
+                              type: "JSXText",
+                              span: {
+                                start: 927,
+                                end: 936
+                              },
+                              value: "\n        ",
+                              raw: "\n        "
+                            },
+                            {
+                              type: "JSXElement",
+                              span: {
+                                start: 936,
+                                end: 1079
+                              },
+                              opening: {
+                                type: "JSXOpeningElement",
+                                name: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 937,
+                                    end: 945
+                                  },
+                                  ctxt: 2,
+                                  value: "Suspense",
+                                  optional: false
+                                },
+                                span: {
+                                  start: 936,
+                                  end: 984
+                                },
+                                attributes: [
+                                  {
+                                    type: "JSXAttribute",
+                                    span: {
+                                      start: 946,
+                                      end: 983
+                                    },
+                                    name: {
+                                      type: "Identifier",
+                                      span: {
+                                        start: 946,
+                                        end: 954
+                                      },
+                                      value: "fallback"
+                                    },
+                                    value: {
+                                      type: "JSXExpressionContainer",
+                                      span: {
+                                        start: 955,
+                                        end: 983
+                                      },
+                                      expression: {
+                                        type: "JSXElement",
+                                        span: {
+                                          start: 956,
+                                          end: 982
+                                        },
+                                        opening: {
+                                          type: "JSXOpeningElement",
+                                          name: {
+                                            type: "Identifier",
+                                            span: {
+                                              start: 957,
+                                              end: 958
+                                            },
+                                            ctxt: 1,
+                                            value: "p",
+                                            optional: false
+                                          },
+                                          span: {
+                                            start: 956,
+                                            end: 959
+                                          },
+                                          attributes: [],
+                                          selfClosing: false,
+                                          typeArguments: null
+                                        },
+                                        children: [
+                                          {
+                                            type: "JSXText",
+                                            span: {
+                                              start: 959,
+                                              end: 978
+                                            },
+                                            value: "Loading comments...",
+                                            raw: "Loading comments..."
+                                          }
+                                        ],
+                                        closing: {
+                                          type: "JSXClosingElement",
+                                          span: {
+                                            start: 978,
+                                            end: 982
+                                          },
+                                          name: {
+                                            type: "Identifier",
+                                            span: {
+                                              start: 980,
+                                              end: 981
+                                            },
+                                            ctxt: 1,
+                                            value: "p",
+                                            optional: false
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                ],
+                                selfClosing: false,
+                                typeArguments: null
+                              },
+                              children: [
+                                {
+                                  type: "JSXText",
+                                  span: {
+                                    start: 984,
+                                    end: 995
+                                  },
+                                  value: "\n          ",
+                                  raw: "\n          "
+                                },
+                                {
+                                  type: "JSXElement",
+                                  span: {
+                                    start: 995,
+                                    end: 1059
+                                  },
+                                  opening: {
+                                    type: "JSXOpeningElement",
+                                    name: {
+                                      type: "Identifier",
+                                      span: {
+                                        start: 996,
+                                        end: 1004
+                                      },
+                                      ctxt: 2,
+                                      value: "Comments",
+                                      optional: false
+                                    },
+                                    span: {
+                                      start: 995,
+                                      end: 1059
+                                    },
+                                    attributes: [
+                                      {
+                                        type: "JSXAttribute",
+                                        span: {
+                                          start: 1005,
+                                          end: 1056
+                                        },
+                                        name: {
+                                          type: "Identifier",
+                                          span: {
+                                            start: 1005,
+                                            end: 1020
+                                          },
+                                          value: "commentsPromise"
+                                        },
+                                        value: {
+                                          type: "JSXExpressionContainer",
+                                          span: {
+                                            start: 1021,
+                                            end: 1056
+                                          },
+                                          expression: {
+                                            type: "CallExpression",
+                                            span: {
+                                              start: 1022,
+                                              end: 1055
+                                            },
+                                            ctxt: 0,
+                                            callee: {
+                                              type: "Identifier",
+                                              span: {
+                                                start: 1022,
+                                                end: 1041
+                                              },
+                                              ctxt: 2,
+                                              value: "getCommentsByPostId",
+                                              optional: false
+                                            },
+                                            arguments: [
+                                              {
+                                                spread: null,
+                                                expression: {
+                                                  type: "MemberExpression",
+                                                  span: {
+                                                    start: 1042,
+                                                    end: 1049
+                                                  },
+                                                  object: {
+                                                    type: "Identifier",
+                                                    span: {
+                                                      start: 1042,
+                                                      end: 1046
+                                                    },
+                                                    ctxt: 5,
+                                                    value: "post",
+                                                    optional: false
+                                                  },
+                                                  property: {
+                                                    type: "Identifier",
+                                                    span: {
+                                                      start: 1047,
+                                                      end: 1049
+                                                    },
+                                                    value: "id"
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                spread: null,
+                                                expression: {
+                                                  type: "NumericLiteral",
+                                                  span: {
+                                                    start: 1051,
+                                                    end: 1054
+                                                  },
+                                                  value: 0.1,
+                                                  raw: "0.1"
+                                                }
+                                              }
+                                            ],
+                                            typeArguments: null
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    selfClosing: true,
+                                    typeArguments: null
+                                  },
+                                  children: [],
+                                  closing: null
+                                },
+                                {
+                                  type: "JSXText",
+                                  span: {
+                                    start: 1059,
+                                    end: 1068
+                                  },
+                                  value: "\n        ",
+                                  raw: "\n        "
+                                }
+                              ],
+                              closing: {
+                                type: "JSXClosingElement",
+                                span: {
+                                  start: 1068,
+                                  end: 1079
+                                },
+                                name: {
+                                  type: "Identifier",
+                                  span: {
+                                    start: 1070,
+                                    end: 1078
+                                  },
+                                  ctxt: 2,
+                                  value: "Suspense",
+                                  optional: false
+                                }
+                              }
+                            },
+                            {
+                              type: "JSXText",
+                              span: {
+                                start: 1079,
+                                end: 1086
+                              },
+                              value: "\n      ",
+                              raw: "\n      "
+                            }
+                          ],
+                          closing: {
+                            type: "JSXClosingElement",
+                            span: {
+                              start: 1086,
+                              end: 1092
+                            },
+                            name: {
+                              type: "Identifier",
+                              span: {
+                                start: 1088,
+                                end: 1091
+                              },
+                              ctxt: 1,
+                              value: "div",
+                              optional: false
+                            }
+                          }
+                        },
+                        {
+                          type: "JSXText",
+                          span: {
+                            start: 1092,
+                            end: 1097
+                          },
+                          value: "\n    ",
+                          raw: "\n    "
+                        }
+                      ],
+                      closing: {
+                        type: "JSXClosingElement",
+                        span: {
+                          start: 1097,
+                          end: 1107
+                        },
+                        name: {
+                          type: "Identifier",
+                          span: {
+                            start: 1099,
+                            end: 1106
+                          },
+                          ctxt: 1,
+                          value: "article",
+                          optional: false
+                        }
+                      }
+                    }
+                  },
+                  async: false,
+                  generator: false,
+                  typeParameters: null,
+                  returnType: null
+                }
+              }
+            ],
+            typeArguments: null
+          }
+        }
+      ]
+    },
+    generator: false,
+    async: false,
+    typeParameters: null,
+    returnType: null
+  }
+];
+var interpreter = null;
+var AppWithClient_ast_default = {
+  type,
+  span,
+  body,
+  interpreter
+};
+export {
+  body,
+  AppWithClient_ast_default as default,
+  interpreter,
+  span,
+  type
+};

@@ -1,4 +1,9 @@
-import React from "react";
+import React  from "react";
+import { hydrateRoot } from "react-dom/client";
+
+import Comments from './components/blog/Comments.js';
+
+window.Comments = Comments;
 
 window.renderPosts = function (posts) {
   const container = document.getElementById("posts");
@@ -31,4 +36,12 @@ window.renderComments = function (comments) {
       }, 0);
     }
   });
+};
+
+window.promiseResolved = function (id, data) {
+  const root = document.querySelector(`[data-island="${id}"]`);
+  hydrateRoot(root, React.createElement(
+    Comments,
+    { commentsPromise: Promise.resolve(data) }
+  ));
 };

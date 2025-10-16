@@ -1,5 +1,6 @@
 import React from "react";
 import path from "path";
+import { PassThrough } from "node:stream";
 import { renderToPipeableStream, renderToString } from "react-dom/server";
 import http from "http";
 import express from "express";
@@ -12,7 +13,7 @@ import App from "./components/App.js";
 import AppAsync from "./components/AppAsync.js";
 import AppPipeable from "./components/AppPipeable.js";
 import AppSuspense from "./components/AppSuspense.js";
-import AppWithClient from "./components/AppWithClient.js";
+import AppWithClient from "./components/AppWithClient.rsc.js";
 
 const port = 8087;
 const app = express();
@@ -138,12 +139,45 @@ app.get("/react-suspense", async (req, res) => {
 // ------------------------------------------------------ React Suspense with client component
 
 app.get("/react-suspense-with-client", async (req, res) => {
-  const stream = renderToPipeableStream(<AppWithClient />, {
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+
+  const sendToClient = (code) => {
+    res.write(`<script>${code}</script>`);
+  };
+  
+  const Promises = {
+    _promises: [],
+    add(id, p) {
+      this._promises.push({ id, p });
+      p.then((data) => {
+        sendToClient(`promiseResolved("${id}", ${JSON.stringify(data)});`);
+        this._promises = this._promises.filter((item) => item.id !== id);
+        maybeEnd();
+      })
+    },
+    length() {
+      return this._promises.length;
+    }
+  };
+
+  const reactStream = new PassThrough();
+  let reactEnded = false;
+  reactStream.pipe(res, { end: false });
+  reactStream.on("end", () => {
+    reactEnded = true;
+    maybeEnd();
+  });
+  
+  const maybeEnd = () => {
+    if (reactEnded && Promises.length() === 0) {
+      res.end();
+    }
+  }
+  const stream = renderToPipeableStream(<AppWithClient Promises={Promises}/>, {
     bootstrapScripts: ["/bundle.js"],
     onShellReady() {
-      res.statusCode = 200;
-      res.setHeader("Content-Type", "text/html");
-      stream.pipe(res);
+      stream.pipe(reactStream);
     },
     onError(err) {
       console.error(err);

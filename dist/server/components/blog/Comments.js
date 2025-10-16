@@ -1,8 +1,7 @@
 "use client";
 import React, { use, useState } from "react";
-import { getCommentsByPostId } from "../../services/DB.js";
-function Comments({ postId }) {
-  const comments = use(getCommentsByPostId(postId, 0.2));
+function Comments({ commentsPromise }) {
+  const comments = use(commentsPromise);
   const [visible, setVisible] = useState(false);
   if (!visible) {
     return /* @__PURE__ */ React.createElement("button", { onClick: () => setVisible(true) }, "Show Comments");
