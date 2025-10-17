@@ -140,7 +140,6 @@ app.get("/react-suspense-with-client", async (req, res) => {
   });
   const maybeEnd = () => {
     if (reactEnded && Promises.length() === 0) {
-      sendToClient("console.log('- streaming ends -');");
       res.end();
     }
   };
